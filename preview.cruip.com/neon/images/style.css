@@ -1,0 +1,167 @@
+.logo {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+}
+
+.gts {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(20deg, #1e64cd, rgb(105, 165, 233));
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 800;
+}
+
+.navbar .navbar-nav a{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.navbar .navbar-nav a:hover{
+    color: #1e64cd;
+}
+
+.btn-brand{
+    padding: 8px 24px;   
+    color: #fff;
+    background:#1e64cd;
+}
+
+.btn-brand:hover{
+    background: #fff;
+    color:#1e64cd;
+    border: 1px solid #1e64cd;
+}
+
+.btn-brand:hover i{
+    color:#1e64cd !important;
+}
+
+/*services section*/
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon-container i {
+    font-size: 28px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(20deg, #1e64cd, rgb(105, 165, 233));
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0.5px 0.5px linear-gradient(20deg, #1e64cd, #f472b6);
+}
+
+
+footer .gts-social-links i {
+    font-size: 30px;
+    margin: 2px;
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+    z-index: 2;
+}
+
+.sun {
+    position: absolute;
+    left: 15em;
+    top: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+
+.earth,
+.moon {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.earth {
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+}
+
+.moon {
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+}
+
+.earth::before,
+.moon::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background-color: #1e64cd;
+}
+
+.moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dot-cop {
+    color: #f472b6;
+}
+
+.s-card:hover {
+    padding-bottom: 8px;
+    transition: 0.10s;
+    box-shadow: 0px 0.2px 0px #f472b6;
+    /* Ajustez les valeurs selon vos préférences */
+
+}
